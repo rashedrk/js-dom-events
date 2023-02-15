@@ -22,7 +22,16 @@
     <script>
         document.getElementById("item-2").addEventListener('click', function (event) {
             console.log("item-2 clicked");
-            event.stopPropagation();
+            // event.stopPropagation();
+            event.stopImmediatePropagation();
+        });
+        document.getElementById("item-2").addEventListener('click', function (event) {
+            console.log("item-2 second clicked");
+            
+        });
+        document.getElementById("item-2").addEventListener('click', function (event) {
+            console.log("item-2 third clicked");
+            
         });
         document.getElementById("ul").addEventListener('click', function () {
             console.log("ul clicked");
